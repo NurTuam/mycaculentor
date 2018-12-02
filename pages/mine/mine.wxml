@@ -1,0 +1,5 @@
+<view class="container">
+<!-- <button class="login-btn" type="warn" open-type="getUserInfo" bindgetuserinfo="getuserinfo">登录</button> -->
+<image class="avabar" src="{{avatarUrl}}"></image>
+<text class="hello" >{{nickName}}</text>
+</view>

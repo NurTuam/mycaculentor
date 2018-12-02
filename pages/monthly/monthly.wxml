@@ -17,7 +17,7 @@
     </view>
     <view class="action">
         <view class="explain">
-            <view class="item" wx:for="{{['来了','当前','爱过']}}" wx:key="item.id">{{item}}</view>
+            <view class="item" wx:for="{{['来了','当前','预期']}}" wx:key="item.id">{{item}}</view>
         </view>
         <view class="switch">
         
@@ -41,8 +41,3 @@
     </view>
     
 </view>
-
-
-<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
-  <view> 来就就别爱了 </view>
-</modal>

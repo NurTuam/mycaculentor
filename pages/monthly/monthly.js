@@ -8,7 +8,6 @@ Page({
         danger:false,
         list:[],
         ymd:"",
-        modalHidden:"hidden",
         selected_ymd:"",
         selected_action:"",
     },
@@ -68,7 +67,7 @@ Page({
         month =(month<10 ? "0"+month:month); 
         var year=date.getFullYear(); 
         var tomonth = year+"-"+month;
-        console.log(tomonth);
+        // console.log(tomonth);
         return tomonth;
     },
     draw_calendar: function (now) {
@@ -78,7 +77,7 @@ Page({
         var that = this;
         var list = [];
         var d = new Date(year,month-1,1,1,1,1);
-        console.log(d);
+        // console.log(d);
         var firstDay = d.getDay();
         var allDate = new Date(d.getFullYear(), (d.getMonth()+1), 0).getDate();
         var ymd;
@@ -123,7 +122,7 @@ Page({
         }
         
         var lastDay = new Date(year,month-1,allDate,1,1,1).getDay();
-        console.log(lastDay);
+        // console.log(lastDay);
         var k = i;
         for(i; i<(6-lastDay+k);i++){
             list.push({
@@ -208,12 +207,5 @@ Page({
                 love:false
             })
         }
-    },
-    modalChange:function(e){
-        this.setData({
-            modalHidden:"hidden"
-        })
     }
-
-  
 })

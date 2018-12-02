@@ -1,0 +1,21 @@
+.container{
+  background: #ffa4c4;
+  position: relative;
+  height: 60px;
+}
+.avabar{
+  width:128rpx;
+  height:128rpx;
+  border-radius:50%;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  border: 2px solid #e86c71;
+}
+.hello{
+  position: absolute;
+  display: block;
+  left: 100px;
+  top: 40px;
+  font-size:16px;
+}
